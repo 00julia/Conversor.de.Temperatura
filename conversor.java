@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 	public static void main(String[] args) {
-		 
-		//declare 
-		double cel, fah;
+		
+		//sei la
+		int fah, cel, op;
 		
 		 System.out.println("\n\t\t\t --Conversor-- \n");
 
