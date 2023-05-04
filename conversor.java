@@ -1,38 +1,60 @@
 import java.util.Scanner;
 
-	public static void main(String[] args) {
-		
-		//sei la
-		int fah, cel, op;
-		
-		 System.out.println("\n\t\t\t --Conversor-- \n");
+public class ConversorTemp {
+    /**
+     * @param args
+     */
+    //Kauã Lira
+     public static void main(String[] args) {
+        
+        //Declaração de Variavel
+        Double f, c;
+        int e;
 
-            System.out.println("1. Celsius para Fahrenheit");
-            System.out.println("2. Fahrenheit para Celsius");
-            System.out.println("3. Sair");
+        //Criação e Instancia do Objeto de Entrada
+        Scanner entrada = new Scanner(System.in);
+        do{
+            System.out.println("\n\t\t\t Conversor de Temperatura \n")
 
-            System.out.print("Opção: ");
+            System.out.println("1. Celcius para Fahrenheit")
+            System.out.println("2. Fahrenheit para Celcius")
+            System.out.println("3. Saída")
 
-            Scanner entrada;
-			Object op = entrada.nextInt();
+            System.err.print("Opção: ")
+            e = entrada.nextInt();
 
-			if(op == 1){
+            if (e == 1){
+                System.out.println("\n\t\t\t -- Celsius para Fahreinheit -- \n")
 
-		//Criação de instancia do objeto de entrada
-		try (Scanner entrada = new Scanner(System.in)) {
-			System.out.print("cel");
-			cel = entrada.nextDouble();
-		}
-		
-		//Entrada
-		fah = 9 * cel / 5 + 32;
-		
-		//Saída
-		System.err.println("\n\n" + 9 +  "*" + cel + "/" + 5 + "+" + 32 + "=" + fah +"\n");
-			
-			if(op == 2){
-				
-			}
-	}
+                //Entrada
+                System.out.print("Informe Celcius: ")
+                c = entrada.nextDouble();
+                
+                //Processamento 
+		        f = 9 * c/5 + 32;
 
+                //Saída 
+		        System.out.println("\nFahrenheit= " + f + "\n\n")
+            } else if (e == 2) {
+                //Laura Perez
+                System.out.println("\n\t\t\t -- Fahrenheint para Celcius -- \n");
+
+                //Entradas
+                System.out.print("Informe Fahrenheit: ");
+                f = entrada.nextDouble();
+
+                //Processamento
+                c = f - 32 / 1.8;
+
+                //Saída
+                System.out.println("\nCelcius= ");
+            } else if (e == 3) {
+            //Kauã Lira
+                System.out.println("\n\t\t\t Adeus! \n");
+            } else {
+                System.out.println("Opção " + e + " Incorreta");
+            }
+        }while (e!=3);
+
+    }
 }
