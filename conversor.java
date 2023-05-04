@@ -4,7 +4,7 @@ public class ConversorTemp {
     /**
      * @param args
      */
-    //Kauã Lira
+        //Ana Zinato
      public static void main(String[] args) {
         
         //Declaração de Variavel
@@ -23,36 +23,39 @@ public class ConversorTemp {
             System.err.print("Opção: ");
             e = entrada.nextInt();
 
-            if (e == 1){
-                System.out.println("\n\t\t\t -- Celsius para Fahreinheit -- \n");
+            //Thell Zardi
+                 if (e == 1){
+                    System.out.println("\n\t\t\t -- Celsius para Fahreinheit -- \n");
 
-                //Entrada
-                System.out.print("Informe Celcius: ");
-                c = entrada.nextDouble();
+                     //Entrada
+                    System.out.print("Informe Celcius: ");
+                    c = entrada.nextDouble();
                 
-                //Processamento 
-		        f = 9 * c/5 + 32;
+                    //Processamento 
+		            f = 9 * c/5 + 32;
 
-                //Saída 
-		        System.out.println("\nFahrenheit= " + f + "\n\n")
-            } else if (e == 2) {
-                //Laura Perez
-                System.out.println("\n\t\t\t -- Fahrenheint para Celcius -- \n");
+                     //Saída 
+		            System.out.println("\nFahrenheit= " + f + "\n\n")
 
-                //Entradas
-                System.out.print("Informe Fahrenheit: ");
-                f = entrada.nextDouble();
+                    //Júlia Mogi
+                } else if (e == 2) {
+              
+                    System.out.println("\n\t\t\t -- Fahrenheint para Celcius -- \n");
 
-                //Processamento
-                c = f - 32 / 1.8;
+                    //Entradas
+                    System.out.print("Informe Fahrenheit: ");
+                    f = entrada.nextDouble();
 
-                //Saída
-                System.out.println("\nCelcius= ");
+                    //Processamento
+                     c = f - 32 / 1.8;
+
+                    //Saída
+                     System.out.println("\nCelcius= ");
             } else if (e == 3) {
-            //Kauã Lira
-                System.out.println("\n\t\t\t Adeus! \n");
+          
+                    System.out.println("\n\t\t\t Adeus! \n");
             } else {
-                System.out.println("Opção " + e + " Incorreta");
+                     System.out.println("Opção " + e + " Incorreta");
             }
         }while (e!=3);
 
