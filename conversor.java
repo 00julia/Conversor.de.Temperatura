@@ -14,20 +14,20 @@ public class ConversorTemp {
         //Criação e Instancia do Objeto de Entrada
         Scanner entrada = new Scanner(System.in);
         do{
-            System.out.println("\n\t\t\t Conversor de Temperatura \n")
+            System.out.println("\n\t\t\t Conversor de Temperatura \n");
 
-            System.out.println("1. Celcius para Fahrenheit")
-            System.out.println("2. Fahrenheit para Celcius")
-            System.out.println("3. Saída")
+            System.out.println("1. Celcius para Fahrenheit");
+            System.out.println("2. Fahrenheit para Celcius");
+            System.out.println("3. Saída");
 
-            System.err.print("Opção: ")
+            System.err.print("Opção: ");
             e = entrada.nextInt();
 
             if (e == 1){
-                System.out.println("\n\t\t\t -- Celsius para Fahreinheit -- \n")
+                System.out.println("\n\t\t\t -- Celsius para Fahreinheit -- \n");
 
                 //Entrada
-                System.out.print("Informe Celcius: ")
+                System.out.print("Informe Celcius: ");
                 c = entrada.nextDouble();
                 
                 //Processamento 
