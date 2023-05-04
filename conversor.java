@@ -37,7 +37,7 @@ public class ConversorTemp {
                      //Saída 
 		            System.out.println("\nFahrenheit= " + f + "\n\n")
 
-                    //Júlia Mogi
+                    //Júlia P. Mogi
                 } else if (e == 2) {
               
                     System.out.println("\n\t\t\t -- Fahrenheint para Celcius -- \n");
