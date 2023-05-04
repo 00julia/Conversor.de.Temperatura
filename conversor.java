@@ -29,7 +29,10 @@ import java.util.Scanner;
 		
 		//Saída
 		System.err.println("\n\n" + 9 +  "*" + cel + "/" + 5 + "+" + 32 + "=" + fah +"\n");
+			
+			if(op == 2){
 				
+			}
 	}
 
 }
