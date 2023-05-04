@@ -1,20 +1,30 @@
 import java.util.Scanner;
 
-public class conversor {
 	public static void main(String[] args) {
 		 
 		//declare 
 		double cel, fah;
 		
+		 System.out.println("\n\t\t\t --Conversor-- \n");
+
+            System.out.println("1. Celsius para Fahrenheit");
+            System.out.println("2. Fahrenheit para Celsius");
+            System.out.println("3. Sair");
+
+            System.out.print("Opção: ");
+
+            Scanner entrada;
+			Object op = entrada.nextInt();
+
+			if(op == 1){
+
 		//Criação de instancia do objeto de entrada
-		Scanner entrada = new Scanner(System.in);
+		try (Scanner entrada = new Scanner(System.in)) {
+			System.out.print("cel");
+			cel = entrada.nextDouble();
+		}
 		
 		//Entrada
-		System.out.print("cel");
-		cel = entrada.nextDouble();
-				
-
-		//processamento 
 		fah = 9 * cel / 5 + 32;
 		
 		//Saída
